@@ -97,7 +97,8 @@ public class ServoTest extends LinearOpMode {
             }
 
             // Show the elapsed game time and wheel power.
-            telemetry.addData("ServoPosition: ", servo.getPosition());
+            telemetry.addData("ServoPosition: ", servoPosition);
+            telemetry.addData("ActualServoPosition: ", servo.getPosition());
             telemetry.update();
         }
     }
