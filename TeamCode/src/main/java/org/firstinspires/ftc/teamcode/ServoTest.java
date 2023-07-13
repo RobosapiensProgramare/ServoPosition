@@ -81,11 +81,11 @@ public class ServoTest extends LinearOpMode {
             // Setup a variable for each drive wheel to save power level for telemetry
             if(gamepad1.dpad_up)
             {
-                servoPosition++;
+                servoPosition = servoPosition + 0.1;
             }
             if(gamepad1.dpad_down)
             {
-                servoPosition--;
+                servoPosition = servoPosition - 0.1;
             }
             if(gamepad1.cross)
             {
